@@ -40,6 +40,6 @@ You must have a LaTeX distribution installed on your machine:
 ### 2. Installation
 Clone the repository and install the Python dependencies:
 ```bash
-git clone [https://github.com/GitaVansh/PyLaTeX-Beam-Analysis-Automator.git](https://github.com/YOUR_USERNAME/PyLaTeX-Beam-Analysis-Automator.git)
+git clone [https://github.com/GitaVansh/PyLaTeX-Beam-Analysis-Automator.git](https://github.com/GitaVansh/PyLaTeX-Beam-Analysis-Automator.git)
 cd PyLaTeX-Beam-Analysis-Automator
 pip install -r requirements.txt
