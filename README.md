@@ -1,40 +1,45 @@
-# 📊 Structural Beam Analysis Report Generator
+# 🏗️ PyLaTeX-Beam-Analysis-Automator
 
 ## 📖 Project Overview
-This project is an automated Python-based solution designed to generate professional engineering reports for **Simply Supported Beams**. By bridging the gap between data analysis and professional typesetting, the script reads loading data from Excel and produces a high-fidelity PDF report using **PyLaTeX**.
+This project is a Python-based automation tool designed to generate comprehensive, submission-ready engineering reports for **Simply Supported Beams**. 
 
-The tool is specifically designed to meet structural engineering standards, featuring vector-based diagrams that remain crisp at any zoom level.
+By processing loading data from Excel, the script performs structural calculations and leverages **PyLaTeX** to typeset a professional PDF. Unlike standard reporting tools, this script generates **native LaTeX vector graphics**, ensuring that diagrams remain perfectly sharp at any scale.
 
 ---
 
 ## ✨ Features
-* **✅ Automated Data Ingestion:** Uses `pandas` to extract loading points and magnitudes from Excel spreadsheets.
-* **✅ Native LaTeX Tabulars:** Reconstructs the force table as selectable, searchable LaTeX text (no image-based tables).
-* **✅ TikZ/pgfplots Diagrams:** Generates vector-based **Shear Force Diagrams (SFD)** and **Bending Moment Diagrams (BMD)** directly in the PDF.
-* **✅ Professional Formatting:** Automatically generates a Title Page, Table of Contents, and structured sections for Introduction, Analysis, and Summary.
-* **✅ Visual Integration:** Embeds reference beam diagrams within the analysis section using PyLaTeX Figure environments.
+* **✅ Automated Data Processing:** Reads point loads and beam geometry from Excel using `pandas`.
+* **✅ Native LaTeX Tables:** Reconstructs force data into searchable, professional `tabular` environments.
+* **✅ TikZ/pgfplots Vector Diagrams:** Programmatically generates **Shear Force Diagrams (SFD)** and **Bending Moment Diagrams (BMD)** using TikZ—no low-resolution images.
+* **✅ Structured Documentation:** Includes a Title Page, Table of Contents, Introduction with embedded beam diagrams, and a detailed Analysis section.
+* **✅ Professional Aesthetics:** Mimics industrial software outputs (like Midas) with shaded contour plots and axis legends.
+
+
 
 [Image of a Shear Force and Bending Moment Diagram for a simply supported beam]
+
 
 ---
 
 ## 🛠 Technical Stack
-* **Core Logic:** Python 3.10+
-* **Data Processing:** `pandas`, `openpyxl`
-* **PDF Generation:** `PyLaTeX`
-* **Graphics:** `TikZ` / `pgfplots` (LaTeX-native vector graphics)
-* **LaTeX Backend:** TeX Live, MiKTeX, or MacTeX
+* **Language:** Python 3.10+
+* **Data Handling:** `pandas`, `openpyxl`
+* **Typesetting Engine:** `PyLaTeX`
+* **Graphics Engine:** `TikZ` / `pgfplots`
+* **LaTeX Backend:** TeX Live, MiKTeX, or MacTeX (required for compilation)
 
 ---
 
 ## 🚀 Quick Start
 
 ### 1. Prerequisites
-Ensure you have a LaTeX distribution installed on your system (like **MiKTeX** or **TeX Live**) so the script can compile the `.tex` output.
+You must have a LaTeX distribution installed on your machine:
+* **Windows:** [MiKTeX](https://miktex.org/)
+* **Linux/Mac:** [TeX Live](https://www.tug.org/texlive/)
 
 ### 2. Installation
-Clone the repository and install the dependencies:
+Clone the repository and install the Python dependencies:
 ```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-cd YOUR_REPO_NAME
+git clone [https://github.com/GitaVansh/PyLaTeX-Beam-Analysis-Automator.git](https://github.com/YOUR_USERNAME/PyLaTeX-Beam-Analysis-Automator.git)
+cd PyLaTeX-Beam-Analysis-Automator
 pip install -r requirements.txt
