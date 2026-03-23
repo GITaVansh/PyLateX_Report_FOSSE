@@ -16,7 +16,6 @@ By processing loading data from Excel, the script performs structural calculatio
 
 
 
-[Image of a Shear Force and Bending Moment Diagram for a simply supported beam]
 
 
 ---
